@@ -5,10 +5,9 @@ while True:
 	if password == PASSWORD:
 		print('登入成功')
 		break
-	if password != PASSWORD:
-		print('wrong answer')
+	else:
 		fail = fail - 1
-		if fail <= 0 : 
+		print(f"wrong answer, 還有{fail}次機會")
+		if fail == 0 : 
 			break
-		else:
-			print(f"還有{fail}機會")
+
